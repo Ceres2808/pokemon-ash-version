@@ -1,0 +1,90 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cm14fw5iyqyag"
+path="res://.godot/imported/pokemon_firered_-_players_room.glb-401ca9a5af568a586b5caa39e417f463.scn"
+
+[deps]
+
+source_file="res://Players_Room/pokemon_firered_-_players_room.glb"
+dest_files=["res://.godot/imported/pokemon_firered_-_players_room.glb-401ca9a5af568a586b5caa39e417f463.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"nodes": {
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/Base_GRP/base/base_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/Base_GRP/tiles/tiles_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/Carpet_GRP/carpet_B/carpet_B_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/Computer_GRP/Computer/Computer_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/Computer_GRP/chair/chair_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/Computer_GRP/table/table_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/NES/NES_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/TV_GRP/TV/TV_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/TV_GRP/TV_stand/TV_stand_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/bed/bed_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/bookShelf/bookShelf_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/railing/railing_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/stairs/stairs_fireRed_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/fireRed_room_fbx/RootNode/Pokemon_FireRed_Player_s_Room_GRP/wall_picture/wall_picture_fireRed_material_0": {
+"generate/physics": true
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1
+gltf/texture_map_mode=1

@@ -1,0 +1,72 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cabg7e58mf8hk"
+path="res://.godot/imported/Viridian_City.glb-a2aa24ae5d7693750f4f1fec15900f5e.scn"
+
+[deps]
+
+source_file="res://Viridian_City/Viridian_City.glb"
+dest_files=["res://.godot/imported/Viridian_City.glb-a2aa24ae5d7693750f4f1fec15900f5e.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"nodes": {
+"PATH:Sketchfab_model/c4af64ef91fd4617b7cbef2d804a8f59_fbx/RootNode/fire_red_pokemon_center/fire_red_pokemon_center2/fire_red_pokemon_center__3772_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/c4af64ef91fd4617b7cbef2d804a8f59_fbx/RootNode/fire_red_pokemon_center/fire_red_pokemon_center2/fire_red_pokemon_center__3863_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/c4af64ef91fd4617b7cbef2d804a8f59_fbx/RootNode/fire_red_pokemon_center/fire_red_pokemon_center2/fire_red_pokemon_center_chip_wood_a_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/c4af64ef91fd4617b7cbef2d804a8f59_fbx/RootNode/fire_red_pokemon_center/fire_red_pokemon_center2/fire_red_pokemon_center_fire_red_buildings_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/c4af64ef91fd4617b7cbef2d804a8f59_fbx/RootNode/fire_red_pokemon_center/fire_red_pokemon_center2/fire_red_pokemon_center_fire_red_buildings_1_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/c4af64ef91fd4617b7cbef2d804a8f59_fbx/RootNode/fire_red_pokemon_center/fire_red_pokemon_center2/fire_red_pokemon_center_fr_tree_a_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/c4af64ef91fd4617b7cbef2d804a8f59_fbx/RootNode/fire_red_pokemon_center/fire_red_pokemon_center2/fire_red_pokemon_center_fr_tree_a_02": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/c4af64ef91fd4617b7cbef2d804a8f59_fbx/RootNode/fire_red_pokemon_center/fire_red_pokemon_center2/fire_red_pokemon_center_viridian_tree_a_0": {
+"generate/physics": true
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1
+gltf/texture_map_mode=1

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d3wbrwrn35q2w"]
+
+[ext_resource type="PackedScene" uid="uid://cm14fw5iyqyag" path="res://Players_Room/pokemon_firered_-_players_room.glb" id="1_malfo"]
+[ext_resource type="PackedScene" uid="uid://bwggrf7sbmkcv" path="res://PlayerCharacter/player_character_scene.tscn" id="2_q7lha"]
+
+[node name="Node3D" type="Node3D" unique_id=331269038]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1098021456 instance=ExtResource("1_malfo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5426341, 0, -0.5498743)
+
+[node name="PlayerCharacter" parent="." unique_id=1631114635 instance=ExtResource("2_q7lha")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -1.3631284, 0.99999976, 1.2266085)
+walk_speed = 3.0
+run_speed = 7.0
+can_jump = false
+dash_speed = 20.0

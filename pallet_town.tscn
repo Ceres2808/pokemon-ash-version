@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cass80dkkbh3s"]
+
+[ext_resource type="PackedScene" uid="uid://cabg7e58mf8hk" path="res://Viridian_City/Viridian_City.glb" id="1_1lw7k"]
+[ext_resource type="PackedScene" uid="uid://b6uwtebsvlq6o" path="res://Route_2/Route_2.glb" id="2_485gm"]
+[ext_resource type="PackedScene" uid="uid://7k8qtgpmfhc0" path="res://Route_1/Route_1.glb" id="3_wubqs"]
+[ext_resource type="PackedScene" uid="uid://cuee7xqjeb7qu" path="res://Pallet_Town/Pallet_Town.glb" id="4_eam7s"]
+[ext_resource type="PackedScene" uid="uid://bwggrf7sbmkcv" path="res://PlayerCharacter/player_character_scene.tscn" id="5_eam7s"]
+[ext_resource type="ArrayOccluder3D" uid="uid://1bkps45kardd" path="res://pallet_town.occ" id="6_lrj0d"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lrj0d"]
+
+[sub_resource type="Sky" id="Sky_eam7s"]
+sky_material = SubResource("ProceduralSkyMaterial_lrj0d")
+
+[sub_resource type="Environment" id="Environment_pkl63"]
+background_mode = 2
+sky = SubResource("Sky_eam7s")
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.32
+reflected_light_source = 2
+glow_enabled = true
+
+[node name="PalletTown" type="Node3D" unique_id=2063705909]
+
+[node name="Viridian_City" parent="." unique_id=2049814948 instance=ExtResource("1_1lw7k")]
+transform = Transform3D(1, 0, 0, 0, 0.9385503, 0.3451425, 0, -0.3451425, 0.9385503, 39.03772, 8.888235, -162.46553)
+
+[node name="Route_2" parent="." unique_id=944672645 instance=ExtResource("2_485gm")]
+transform = Transform3D(1, 0, 0, 0, 0.9512375, 0.30845937, 0, -0.30845937, 0.9512375, -6.486862, 12.630741, -236.71387)
+
+[node name="Route_1" parent="." unique_id=2021081521 instance=ExtResource("3_wubqs")]
+transform = Transform3D(1, 0, 0, 0, 0.94547766, 0.32568702, 0, -0.32568702, 0.94547766, -1.3709183, -0.48523712, -47.30468)
+
+[node name="Pallet_Town" parent="." unique_id=787971216 instance=ExtResource("4_eam7s")]
+transform = Transform3D(1, 0, 0, 0, 0.9834632, 0.18110758, 0, -0.18110758, 0.9834632, -1.3768082, 2.173191, -0.73418427)
+
+[node name="PlayerCharacter" parent="." unique_id=1631114635 instance=ExtResource("5_eam7s")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 6.88614, -4.8916483, -20.834927)
+walk_speed = 3.0
+run_speed = 7.0
+can_jump = false
+nb_jumps_in_air_allowed = 0
+dash_speed = 20.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=513244802]
+environment = SubResource("Environment_pkl63")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=188597322]
+transform = Transform3D(0.9817842, 0.11316674, -0.15262061, 0, 0.803269, 0.5956164, 0.18999937, -0.5847668, 0.78863686, 0, 19.37166, -8.526667)
+shadow_enabled = true
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=117017301]
+occluder = ExtResource("6_lrj0d")
