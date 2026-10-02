@@ -1,0 +1,21 @@
+[gd_scene load_steps=8 format=3]
+[ext_resource type="Script" path="res://Mechanics/encounter_zone.gd" id="1"]
+[ext_resource type="Script" path="res://Mechanics/encounter_entry.gd" id="2"]
+[ext_resource type="Resource" path="res://Mechanics/Data/pidgey.tres" id="3"]
+[ext_resource type="Resource" path="res://Mechanics/Data/rattata.tres" id="4"]
+[sub_resource type="BoxShape3D" id="Shape"]
+size = Vector3(8, 4, 10)
+[sub_resource type="Resource" id="Pidgey"]
+script = ExtResource("2")
+species = ExtResource("3")
+[sub_resource type="Resource" id="Rattata"]
+script = ExtResource("2")
+species = ExtResource("4")
+[node name="EncounterGrass" type="Area3D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1")
+entries = Array[ExtResource("2")]([SubResource("Pidgey"), SubResource("Rattata")])
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0, 1, 0)
+shape = SubResource("Shape")

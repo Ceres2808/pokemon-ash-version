@@ -11,14 +11,27 @@ config_version=5
 [application]
 
 config/name="Pokemon Ash Version"
-run/main_scene="uid://cass80dkkbh3s"
+run/main_scene="res://pallet_town.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameSession="*res://Mechanics/game_session.gd"
+
+_mcp_game_helper="*res://addons/godot_ai/runtime/game_helper.gd"
+
 [display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_ai/plugin.cfg")
 
 [physics]
 
@@ -28,3 +41,65 @@ window/stretch/aspect="expand"
 
 rendering_device/driver.windows="d3d12"
 occlusion_culling/use_occlusion_culling=true
+
+[input]
+
+play_char_move_forward_action={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":87)]
+}
+
+play_char_move_backward_action={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":83)]
+}
+
+play_char_move_left_ation={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":65)]
+}
+
+play_char_move_right_action={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":68)]
+}
+
+play_char_run_action={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":4194325)]
+}
+
+play_char_crouch_action={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":67)]
+}
+
+play_char_jump_action={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":32)]
+}
+
+play_char_slide_action={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":67)]
+}
+
+play_char_dash_action={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":4194326)]
+}
+
+play_char_fly_action={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":70)]
+}
+
+play_char_zoom_action={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":90)]
+}
+
+play_char_mouse_mode_action={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":4194305)]
+}

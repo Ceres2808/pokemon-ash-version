@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://djqwgcp3ehij1"]
 
-[ext_resource type="Script" uid="uid://cpe3jrnwinlxh" path="res://Godot-Advanced-State-Machine-First-Person-Controller/addons/JehenoAdvancedFirstPersonController/Map/MovementModifiers/slipperyZone/slippery_zone_script.gd" id="1_uuc2g"]
-[ext_resource type="Material" uid="uid://bnka266lmacek" path="res://Godot-Advanced-State-Machine-First-Person-Controller/addons/JehenoAdvancedFirstPersonController/Map/Materials/movement_modifiers_structure_material.tres" id="2_1st6g"]
+[ext_resource type="Script" uid="uid://cpe3jrnwinlxh" path="res://Map/MovementModifiers/slipperyZone/slippery_zone_script.gd" id="1_uuc2g"]
+[ext_resource type="Material" uid="uid://bnka266lmacek" path="res://Map/Materials/movement_modifiers_structure_material.tres" id="2_1st6g"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_b02vy"]
 size = Vector3(20, 0.001, 4)

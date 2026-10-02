@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://bwggrf7sbmkcv" path="res://PlayerCharacter/player_character_scene.tscn" id="5_eam7s"]
 [ext_resource type="ArrayOccluder3D" uid="uid://1bkps45kardd" path="res://pallet_town.occ" id="6_lrj0d"]
 
+[ext_resource type="PackedScene" path="res://Mechanics/mechanics_world.tscn" id="7_mechanics"]
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lrj0d"]
 
 [sub_resource type="Sky" id="Sky_eam7s"]
@@ -52,3 +54,5 @@ shadow_enabled = true
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=117017301]
 occluder = ExtResource("6_lrj0d")
+
+[node name="Mechanics" parent="." instance=ExtResource("7_mechanics")]

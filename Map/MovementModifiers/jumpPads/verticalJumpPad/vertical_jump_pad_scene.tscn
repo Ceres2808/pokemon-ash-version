@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b84t3rpy4cau8"]
 
-[ext_resource type="Script" uid="uid://ch2miryixkhp8" path="res://Godot-Advanced-State-Machine-First-Person-Controller/addons/JehenoAdvancedFirstPersonController/Map/MovementModifiers/jumpPads/jump_pad_script.gd" id="1_53g1g"]
-[ext_resource type="Texture2D" uid="uid://5ppiu6jhtnkm" path="res://Godot-Advanced-State-Machine-First-Person-Controller/addons/JehenoAdvancedFirstPersonController/Arts/godot-prototype-texture/PNG/checker_512x512/checker_blue_512x512.png" id="3_s38xc"]
+[ext_resource type="Script" uid="uid://ch2miryixkhp8" path="res://Map/MovementModifiers/jumpPads/jump_pad_script.gd" id="1_53g1g"]
+[ext_resource type="Texture2D" uid="uid://5ppiu6jhtnkm" path="res://Arts/godot-prototype-texture/PNG/checker_512x512/checker_blue_512x512.png" id="3_s38xc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s38xc"]
 albedo_texture = ExtResource("3_s38xc")

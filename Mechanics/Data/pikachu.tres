@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpeciesData" load_steps=5 format=3]
+[ext_resource type="Script" path="res://Mechanics/Data/species_data.gd" id="1"]
+[ext_resource type="Resource" path="res://Mechanics/Data/thunder_shock.tres" id="2"]
+[ext_resource type="Resource" path="res://Mechanics/Data/quick_attack.tres" id="3"]
+[ext_resource type="Script" path="res://Mechanics/Data/move_data.gd" id="4"]
+[resource]
+script = ExtResource("1")
+id = "pikachu"
+display_name = "Pikachu"
+types = Array[String](["electric"])
+base_hp = 35
+base_attack = 55
+base_defense = 40
+base_speed = 90
+experience_yield = 112
+color = Color(1, 0.82, 0.12, 1)
+moves = Array[ExtResource("4")]([ExtResource("2"), ExtResource("3")])

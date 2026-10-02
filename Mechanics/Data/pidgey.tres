@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SpeciesData" load_steps=4 format=3]
+[ext_resource type="Script" path="res://Mechanics/Data/species_data.gd" id="1"]
+[ext_resource type="Resource" path="res://Mechanics/Data/tackle.tres" id="2"]
+[ext_resource type="Script" path="res://Mechanics/Data/move_data.gd" id="3"]
+[resource]
+script = ExtResource("1")
+id = "pidgey"
+display_name = "Pidgey"
+types = Array[String](["normal", "flying"])
+base_hp = 40
+base_attack = 45
+base_defense = 40
+base_speed = 56
+experience_yield = 50
+color = Color(0.7, 0.47, 0.25, 1)
+moves = Array[ExtResource("3")]([ExtResource("2")])

@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://d4gavwq81shmv"]
 
-[ext_resource type="Script" uid="uid://jcfs61o33ary" path="res://Godot-Advanced-State-Machine-First-Person-Controller/addons/JehenoAdvancedFirstPersonController/Map/MovementModifiers/conveyorZone/conveyor_zone_script.gd" id="1_nmpw7"]
+[ext_resource type="Script" uid="uid://jcfs61o33ary" path="res://Map/MovementModifiers/conveyorZone/conveyor_zone_script.gd" id="1_nmpw7"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b02vy"]
 

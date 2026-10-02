@@ -2,6 +2,9 @@ extends CharacterBody3D
 
 class_name PlayerCharacter
 
+@export var allow_advanced_movement: bool = false
+var input_locked: bool = false
+
 @export_group("Movement variables")
 var move_speed: float
 var move_accel: float
@@ -241,6 +244,9 @@ func _process(delta: float) -> void:
 	jump_timer(delta)
 
 func _physics_process(_delta: float) -> void:
+	if input_locked:
+		velocity = Vector3.ZERO
+		return
 	modify_physics_properties()
 
 	move_and_slide()

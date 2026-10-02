@@ -63,6 +63,7 @@ var step_timer : float = 0.0
 
 @export_group("Mouse variables")
 var mouse_free : bool = false
+@export var manage_mouse_capture: bool = true
 
 @export_group("Keybind variables")
 @export var zoom_action : StringName = "play_char_zoom_action"
@@ -121,6 +122,7 @@ func input_actions_check() -> void:
 					InputMap.action_add_event(input_action, input_event_key)
 				
 func _unhandled_input(event) -> void:
+	if play_char.input_locked or Input.mouse_mode != Input.MOUSE_MODE_CAPTURED: return
 	#manage camera rotation (360 on x axis, blocked at specified values on y axis, to not having the character do a complete head turn, which will be kinda weird)
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * (x_axis_sensibility / 10))
@@ -129,6 +131,7 @@ func _unhandled_input(event) -> void:
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(max_up_angle_view), deg_to_rad(max_down_angle_view))
 		
 func _process(delta : float) -> void:
+	if play_char.input_locked: return
 	state = play_char.state_machine.curr_state_name
 	
 	tilt(delta)
@@ -137,7 +140,7 @@ func _process(delta : float) -> void:
 	
 	zoom()
 	
-	mouse_mode()
+	if manage_mouse_capture: mouse_mode()
 	
 func tilt(delta : float) -> void:
 	if state != "Fly" and state != "Slide" and state != "Wallrun":

@@ -27,12 +27,17 @@ func _ready() -> void:
 		curr_state_name = curr_state.state_name
 		
 func _process(delta : float) -> void:
+	if play_char.input_locked: return
 	if curr_state: curr_state.update(delta)
 	
 func _physics_process(delta: float) -> void:
+	if play_char.input_locked: return
 	if curr_state: curr_state.physics_update(delta)
 	
 func on_state_child_transition(state : State, new_state_name : String) -> void:
+	if play_char.input_locked: return
+	if new_state_name == "JumpState" and not play_char.can_jump: return
+	if not play_char.allow_advanced_movement and new_state_name in ["FlyState", "DashState", "SlideState", "WallrunState"]: return
 	#manage the transition from one state to another
 	
 	if state != curr_state: return
